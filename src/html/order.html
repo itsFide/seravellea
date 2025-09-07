@@ -163,67 +163,71 @@
         </section>
         
         <script>
-            const TOTAL_SECONDS = (8 * 3600) + (33 * 60) + 57;
-            const STORAGE_KEY = 'countdown_end_ts_v1';
-
-            const hrsRing = document.querySelector('#ring-hrs .progress');
-            const minRing = document.querySelector('#ring-min .progress');
-            const secRing = document.querySelector('#ring-sec .progress');
-
-            const hrsVal = document.getElementById('val-hrs');
-            const minVal = document.getElementById('val-min');
-            const secVal = document.getElementById('val-sec');
-
-            const R = secRing.r.baseVal.value;
-            const C = 2 * Math.PI * R;
-            [hrsRing, minRing, secRing].forEach(c => {
-                c.style.strokeDasharray = `${C} ${C}`;
-                c.style.strokeDashoffset = '0';
-            });
-
-            const nowTs = Date.now();
-            let saved = Number(localStorage.getItem(STORAGE_KEY));
-            let end = (saved && saved > nowTs) ? saved : nowTs + TOTAL_SECONDS * 1000;
-            if (!saved || saved <= nowTs) localStorage.setItem(STORAGE_KEY, String(end));
-
-            function pad(n) { return n.toString().padStart(2, '0'); }
-            function setProgress(circle, ratioRemaining) {
-                const r = Math.max(0, Math.min(1, ratioRemaining));
-                circle.style.strokeDashoffset = String(C * (1 - r));
-            }
-
-            function tick() {
+            (() => {
+              const DEFAULT_SECONDS = (8 * 3600) + (33 * 60) + 57;
+            
+              const blocks = document.querySelectorAll('[data-countdown], .countdown');
+              if (!blocks.length) return;
+            
+              function pad(n){ return String(n).padStart(2,'0'); }
+              function clamp01(x){ return Math.max(0, Math.min(1, x)); }
+            
+              blocks.forEach((root, idx) => {
+                const secondsTotal = Number(root.dataset.seconds) || DEFAULT_SECONDS;
+                const storageKey = root.dataset.key || 'countdown_end_ts_v1';
+            
+                const rings = root.querySelectorAll('.progress');
+                const values = root.querySelectorAll('.value');
+                if (rings.length < 3 || values.length < 3) return;
+            
+                const [hrsRing, minRing, secRing] = rings;
+                const [hrsVal,  minVal,  secVal ] = values;
+            
+                const R = secRing.r.baseVal.value;
+                const C = 2 * Math.PI * R;
+                rings.forEach(c => {
+                  c.style.strokeDasharray = `${C} ${C}`;
+                  c.style.strokeDashoffset = '0';
+                });
+            
+                let saved = Number(localStorage.getItem(storageKey));
                 const now = Date.now();
-                let remain = Math.max(0, Math.floor((end - now) / 1000));
-
-                const h = Math.floor(remain / 3600);
-                const m = Math.floor((remain % 3600) / 60);
-                const s = remain % 60;
-
-                hrsVal.textContent = pad(h);
-                minVal.textContent = pad(m);
-                secVal.textContent = pad(s);
-
-                const ratioHours = remain / (TOTAL_SECONDS || 1);
-                const ratioMinutes = (remain % 3600) / 3600;
-                const ratioSeconds = (remain % 60) / 60;
-
-                setProgress(hrsRing, ratioHours);
-                setProgress(minRing, ratioMinutes);
-                setProgress(secRing, ratioSeconds);
-
-                if (remain <= 0) {
-                    clearInterval(timer);
-                    setProgress(hrsRing, 0);
-                    setProgress(minRing, 0);
-                    setProgress(secRing, 0);
-                    localStorage.removeItem(STORAGE_KEY);
+                let endTs = (saved && saved > now) ? saved : now + secondsTotal * 1000;
+                if (!saved || saved <= now) localStorage.setItem(storageKey, String(endTs));
+            
+                function setProgress(circle, ratioRemaining){
+                  circle.style.strokeDashoffset = String(C * (1 - clamp01(ratioRemaining)));
                 }
-            }
-
-            tick();
-            const timer = setInterval(tick, 100);
+            
+                function tick(){
+                  const now2 = Date.now();
+                  let remain = Math.max(0, Math.floor((endTs - now2) / 1000));
+            
+                  const h = Math.floor(remain / 3600);
+                  const m = Math.floor((remain % 3600) / 60);
+                  const s = remain % 60;
+            
+                  hrsVal.textContent = pad(h);
+                  minVal.textContent = pad(m);
+                  secVal.textContent = pad(s);
+            
+                  setProgress(hrsRing, remain / (secondsTotal || 1));
+                  setProgress(minRing, (remain % 3600) / 3600);
+                  setProgress(secRing, (remain % 60) / 60);
+            
+                  if (remain <= 0){
+                    clearInterval(t);
+                    rings.forEach(c => setProgress(c, 0));
+                    localStorage.removeItem(storageKey);
+                  }
+                }
+            
+                tick();
+                const t = setInterval(tick, 100);
+              });
+            })();
         </script>
+            
           
 		@@include("chunk/footer.html")
 	</main>
