@@ -1,0 +1,135 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+$gray:#414141;
+$white:#fff;
+$blue:#68CAB7;
+html{
+  scroll-behavior: smooth;
+}
+main{
+    overflow: hidden;
+}
+@font-face {
+    font-family: "Bebas Book";
+    src: url("../font/BebasNeueBook.woff2");
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../font/Inter-Regular.woff2");
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Inter";
+    src: url("../font/Inter-Bold.woff2");
+    font-weight: 700;
+    font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../font/Inter-Medium.woff2");
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../font/Inter-LightBETA.woff2");
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../font/Montserrat-Regular.woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../font/Montserrat-Bold.woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../font/Montserrat-Medium.woff2");
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../font/Montserrat-Light.woff2");
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../font/Montserrat-SemiBold.woff2");
+  font-weight: 600;
+  font-display: swap;
+}
+
+body {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #414141;
+}
+
+.container{
+  max-width: 1440px;
+  padding: 0 20px;
+  margin: 0 auto;
+  @media screen and (max-width: 1919px) {
+    max-width: 75vw;
+    padding: 0 1.042vw;
+  } 
+  @media screen and (max-width: 1024px) {
+    max-width: 100%;
+    padding: 0 2.604vw;
+  } 
+  @media screen and (max-width: 650px) {
+    padding: 0 3.623vw;
+  } 
+}
+.title{
+  font-family: "Bebas Neue", sans-serif;
+  line-height: 100%;
+  font-weight: 400;
+  font-size: 76px;
+  & span{
+    color: $blue;
+  }
+  @media screen and (max-width: 1919px) {
+    font-size: 3.958vw;
+  }
+  @media screen and (max-width: 1024px) {
+    font-size: 7.552vw;
+  }
+  @media screen and (max-width: 650px) {
+    font-size: 9.662vw;
+  }
+}
+.show-tablet{
+    display: none;
+}
+@media screen and (max-width: 1024px) {
+    .show-tablet{
+        display: block;
+    }
+    .hide-tablet{
+        display: none;
+    }
+}
+
+@import "block/_header.scss";
+@import "block/_thank.scss";
+
+@import "block/_footer.scss";
