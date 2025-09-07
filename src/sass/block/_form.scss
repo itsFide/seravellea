@@ -527,72 +527,78 @@
 }
 @media screen and (max-width: 650px) {
     .form {
-        padding: 50px 0 60px 0;
-        &-top{
+        padding: 12.077vw 0 14.493vw 0;
+
+        &-top {
             display: flex;
             flex-direction: column;
         }
-        &__title{
+
+        &__title {
             order: 2;
             text-align: left;
-            margin-top: 50px;
-            & br{
+            margin-top: 12.077vw;
+
+            & br {
                 display: none;
             }
         }
-        &__timer{
+
+        &__timer {
             order: 1;
         }
-        &__right{
-            margin-top: 25px;
+
+        &__right {
+            margin-top: 6.039vw;
         }
+
         &__left {
             width: 100%;
             margin-right: 0;
         }
 
         &__btn {
-            padding: 20px 25px;
-            font-size: 30px;
-            margin-top: 20px;
-            border-radius: 12px;
+            padding: 4.831vw 6.039vw;
+            font-size: 7.246vw;
+            margin-top: 4.831vw;
+            border-radius: 2.899vw;
         }
 
         &__label {
-            font-size: 18px;
-            padding-left: 47px;
-            margin-top: 10px;
+            font-size: 4.348vw;
+            padding-left: 11.350vw;
+            margin-top: 2.415vw;
 
             & span {
-                width: 29px;
-                height: 29px;
-                border-radius: 4px;
-                border: 1px solid #DADADA;
+                width: 7.006vw;
+                height: 7.006vw;
+                border-radius: 0.966vw;
+                border: 0.242vw solid #DADADA;
             }
 
             & input {
                 display: none;
 
                 &:checked~span::before {
-                    width: 19px;
-                    height: 19px;
+                    width: 4.589vw;
+                    height: 4.589vw;
                 }
             }
         }
 
         &__item {
-            margin-bottom: 10px;
+            margin-bottom: 2.415vw;
 
             & p {
-                font-size: 18px;
-                margin-bottom: 6px;
+                font-size: 4.348vw;
+                margin-bottom: 1.449vw;
             }
 
             & input {
-                border: 1px solid #EFEFEF;
-                border-radius: 12px;
-                padding: 19px 30px;
-                font-size: 18px;
+                border: 0.242vw solid #EFEFEF;
+                border-radius: 2.899vw;
+                padding: 4.589vw 7.246vw;
+                font-size: 4.348vw;
             }
         }
 
@@ -610,78 +616,82 @@
 
     .form-wrapper {
         flex-direction: column;
-        margin-top: 80px;
+        margin-top: 19.324vw;
     }
 
     .guarantee {
-        margin-top: 14px;
+        margin-top: 3.382vw;
 
         & img {
-            width: 34px;
-            height: 44px;
-            margin-right: 16px;
+            width: 8.213vw;
+            height: 10.628vw;
+            margin-right: 3.865vw;
         }
 
         & p {
-            font-size: 18px;
+            font-size: 4.348vw;
         }
     }
 
     .form-timer {
         margin-top: 0;
+
         & h3 {
-            font-size: 17px;
-            line-height: 21px;
-            margin-bottom: 23px;
+            font-size: 4.106vw;
+            line-height: 5.072vw;
+            margin-bottom: 5.556vw;
         }
     }
 
     .form-list {
-        margin-top: 25px;
+        margin-top: 6.039vw;
 
         & h3 {
-            font-size: 32px;
-            margin-bottom: 10px;
+            font-size: 7.729vw;
+            margin-bottom: 2.415vw;
         }
 
         & li {
-            padding-left: 34px;
-            font-size: 16px;
-            margin-bottom: 10px;
+            padding-left: 8.213vw;
+            font-size: 3.865vw;
+            margin-bottom: 2.415vw;
 
             &::before {
-                width: 24px;
-                height: 24px;
+                width: 5.797vw;
+                height: 5.797vw;
             }
         }
     }
 
     .ring {
-        width: 43px;
-        height: 43px;
-        margin-right: 7px;
+        width: 10.387vw;
+        height: 10.387vw;
+        margin-right: 1.691vw;
     }
 
     .ring .track {
-        stroke-width: 1px;
+        stroke-width: 0.242vw;
     }
 
     .ring .progress {
-        stroke-width: 2px;
+        stroke-width: 0.483vw;
     }
 
     .value {
-        font-size: 18px;
+        font-size: 4.348vw;
     }
 
     .label {
-        top: -20px;
-        font-size: 8px;
+        top: -4.831vw;
+        font-size: 1.932vw;
     }
-    .show-mobile{
+
+    .show-mobile {
         display: block;
     }
-    .hide-mobile{
+
+    .hide-mobile {
         display: none;
     }
-} 
+}
+  
