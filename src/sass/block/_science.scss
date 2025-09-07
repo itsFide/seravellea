@@ -1,0 +1,220 @@
+.science {
+    padding-top: 200px;
+    // .science__title
+
+    &__title {
+        text-align: center;
+    }
+}
+
+.science-items {
+    margin-top: 50px;
+    display: flex;
+}
+.science-item {
+    width: 453px;
+    margin-right: 20px;
+    padding: 20px 35px 20px 35px;
+    background-image: url(../img/science-bg.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    &:last-child {
+        margin-right: 0;
+    }
+    // .science-item__title
+
+    &__title {
+        font-size: 34px;
+        line-height: 100%;
+        font-weight: 400;
+        font-family: "Bebas Neue", sans-serif;
+        text-align: center;
+    }
+
+    // .science-item__img
+
+    &__img {
+        display: flex;
+        justify-content: center;
+        margin-top: 47px;
+
+        & img{
+            width: 383px;
+            height: 314px;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+    }
+
+    // .science-item__descr
+
+    &__descr {
+        font-size: 20px;
+        line-height: 100%;
+        font-weight: 400;
+        font-family: "Inter", sans-serif;
+        text-align: center;
+        font-weight: 300;
+        margin-top: 30px;
+        line-height: 24px;
+    }
+}
+@media screen and (max-width: 1919px) {
+    .science {
+        padding-top: 10.417vw;
+
+        &__title {
+            text-align: center;
+        }
+    }
+
+    .science-items {
+        margin-top: 2.604vw;
+    }
+
+    .science-item {
+        width: 23.594vw;
+        margin-right: 1.042vw;
+        padding: 1.042vw 1.823vw 1.042vw 1.823vw;
+
+        &__title {
+            font-size: 1.771vw;
+        }
+
+        &__img {
+            margin-top: 2.448vw;
+
+            & img {
+                width: 19.948vw;
+                height: 16.354vw;
+                border-radius: 1.042vw;
+            }
+        }
+
+        &__descr {
+            font-size: 1.042vw;
+            margin-top: 1.563vw;
+            line-height: 1.25vw;
+        }
+    }
+}
+@media screen and (max-width: 1024px) {
+    .science {
+        padding-top: 20.833vw;
+
+        &__title {
+            text-align: center;
+
+            & br {
+                display: none;
+            }
+        }
+    }
+
+    .science-items {
+        margin-top: 22.005vw;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .science-item {
+        width: 62.370vw;
+        margin-right: 0;
+        padding: 3.604vw 1.823vw 2.604vw 1.823vw;
+        margin-bottom: 2.604vw;
+        background-size: 100%;
+
+        &:last-child {
+            margin-bottom: 0;
+            & .science-item__descr{
+                width: 93%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        &__title {
+            font-size: 4.688vw;
+        }
+
+        &__img {
+            margin-top: 7.031vw;
+
+            & img {
+                width: 46.484vw;
+                height: 38.151vw;
+                border-radius: 2.604vw;
+            }
+        }
+
+        &__descr {
+            font-size: 3.125vw;
+            margin-top: 4.557vw;
+            line-height: 3.776vw;
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .science {
+        padding-top: 24.154vw;
+
+        &__title {
+            text-align: center;
+            width: 98%;
+            margin-left: auto;
+            margin-right: auto;
+
+            & br {
+                display: block;
+            }
+        }
+    }
+
+    .science-items {
+        margin-top: 11.350vw;
+    }
+
+    .science-item {
+        width: 92.754vw;
+        padding: 4.831vw 7.246vw 3.623vw 7.246vw;
+        margin-bottom: 4.831vw;
+        background-image: url(../img/science-bg-mobile.svg);
+        padding: 8.623vw 9.42vw 3.623vw 9.42vw;
+        &:first-child {
+            background-image: url(../img/science-bg-mobile-1.svg);
+            padding: 4.623vw 7.246vw 3.623vw 7.246vw;
+        }
+        &:nth-child(3) {
+            background-image: url(../img/science-bg-mobile-3.svg);
+            padding: 4.623vw 7.246vw 3.623vw 7.246vw;
+            & .science-item__descr{
+                width: 100%;
+            }
+        }
+        &__title {
+            font-size: 6.280vw;
+        }
+
+        &__img {
+            margin-top: 9.415vw;
+
+            & img {
+                width: 73.913vw;
+                height: 60.127vw;
+                border-radius: 4.831vw;
+            }
+        }
+
+        &__descr {
+            font-size: 4.348vw;
+            margin-top: 4.831vw;
+            line-height: 5.314vw;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+  

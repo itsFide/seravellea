@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Seravellea</title>
+	<link
+	rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+	/>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet", href="css/main.css">
+
+</head>
+<body>
+	<main>
+		<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="header__logo">
+                <a href="">
+                    <img src="img/logo.svg" alt="Logo">
+                </a>
+            </div>
+            <div class="header__burger burger">
+                <span></span><span></span><span></span>
+            </div>
+            <div class="header__menu">
+                <div class="show-tablet mob-close">
+                    <img src="img/close-icon.svg" alt="">
+                </div>
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a href="#believe" class="header__link">Giudizi</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#science" class="header__link">Come funziona</a>
+                            
+                        </li>
+                        <li class="header__item">
+                            <a href="#transformation" class="header__link">Trasformazione</a>
+                            
+                        </li>
+                        <li class="header__item">
+                            <a href="#steps" class="header__link">Come funziona</a>
+                            
+                        </li>
+                        <li class="header__item">
+                            <a href="#order" class="header__link">Come usare</a>
+                            
+                        </li>
+                        <li class="header__item">
+                            <a href="#faq" class="header__link">FAQ</a>
+                            
+                        </li>
+                        <li class="header__item">
+                            <a href="" class="header__link">Informativa sulla privacy</a>
+                            
+                        </li>
+                        <li class="header__item">
+                            <a href="" class="header__link">Termini e condizion</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            
+        </div>
+    </div>
+</header>
+<script>
+    
+    document.addEventListener("DOMContentLoaded", function() {
+    const burger = document.querySelector(".header__burger");
+    const mobileNav = document.querySelector(".header__menu");
+    const closeBtn = document.querySelector(".mob-close");
+
+ 
+    burger.addEventListener("click", () => {
+        mobileNav.classList.add("active");
+    });
+
+    closeBtn.addEventListener("click", () => {
+        mobileNav.classList.remove("active");
+    });
+        
+    });
+</script>
+
+		<section class="hero">
+    <div class="container">
+        <div class="hero__inner">
+            <div class="hero__text">
+                <h1 class="title hero__title">Come fai ad avere capelli così?</h1>
+                <h2 class="hero__subtitle">Preparati a rispondere. Ogni. Singolo. Giorno</h2>
+                <div class="hero-block">
+                    <div class="hero-price">
+                        <h3 class="hero-price__title">OFFERTA ESCLUSIVA "POTERE ASSOLUTO"</h3>
+                        <p class="hero-price__descr">2 Flaconi Shine Essence a soli</p>
+                        <div class="hero-price__wrap">
+                            <div class="hero-price__new">€49,99</div>
+                            <div class="hero-price__old">€99</div>
+                        </div>
+                    </div>
+                    <ul class="hero__list">
+                        <li>
+                            Pagamento alla Consegna
+                        </li> 
+                        <li>
+                            Consegna Rapida
+                        </li> 
+                        <li>
+                            Formula Italiana
+                        </li> 
+                    </ul>
+                </div>
+                <a href="#order" class="hero__btn">VOGLIO I MIEI CAPELLI IMPECCABILI</a>
+            </div>
+            <div class="hero__img">
+                <div class="hide-tablet hero__img-text">
+                    TERMINI E CONDIZIONI
+                </div>
+                <img src="img/hero-img.png" alt="Hero">
+            </div>
+        </div>
+    </div>
+</section>
+		<section id="believe" class="believe">
+    <div class="container">
+        <div class="believe__inner">
+            <h2 class="title believe__title">
+                Non credere a noi. Credi a loro.
+            </h2>
+            <h3 class="believe__subtitle">
+                Donne vere, risultati reali. Da Milano a Palermo, ecco cosa sta
+                succedendo ai capelli delle italiane che hanno scoperto
+                Shine Essence.
+            </h3>
+            <div class="believe__video">
+                <video src="img/video-1.mp4" autoplay muted loop></video>
+                <!-- <img src="img/believe-video.jpg" alt=""> -->
+                <!-- <div class="believe__video-play">
+                    <div class="play-btn">
+                        <img src="img/play-icon.svg" alt="">
+                    </div>
+                </div> -->
+            </div>
+            <div class="reviews-items">
+                <div class="reviews-item">
+                    <div class="reviews-item__head">
+                        <div class="reviews-item-info">
+                            <div class="reviews-item__name">Giulia</div>
+                            <div class="reviews-item__age">28 anni</div>
+                        </div>
+                        <div class="reviews-item__rating">
+                            <img src="img/reviews-stars.svg" alt="">
+                        </div>
+                        <div class="reviews-item__position">
+                            Milano - Art Director
+                        </div>
+                        <div class="reviews-item__img">
+                            <img src="img/reviews-item-1.png" alt="">
+                        </div>
+                    </div>
+                    
+                    <p class="reviews-item__descr">
+                        Nel mio lavoro l'immagine è tutto. Ero scettica, ma questo siero ha trasformato i miei capelli. In ufficio mi hanno chiesto se fossi appena uscita dal parrucchiere più costoso di Brera. La mia bella figura quotidiana, in un flacone. Approvato.
+                    </p>
+                </div>
+                <div class="reviews-item">
+                    <div class="reviews-item__head">
+                        <div class="reviews-item-info">
+                            <div class="reviews-item__name">Sofia</div>
+                            <div class="reviews-item__age">37 anni</div>
+                        </div>
+                        <div class="reviews-item__rating">
+                            <img src="img/reviews-stars.svg" alt="">
+                        </div>
+                        <div class="reviews-item__position">
+                            Roma - Mamma e Impiegata
+                        </div>
+                        <div class="reviews-item__img">
+                            <img src="img/reviews-item-2.png" alt="">
+                        </div>
+                    </div>
+                    
+                    <p class="reviews-item__descr">
+                        Tra lavoro, casa e mio figlio, il tempo per me è un lusso. Shine Essence è la mia salvezza. Due spruzzi dopo la doccia e i miei capelli sono ordinati, lucidi e morbidi per tutto il giorno. Semplice, veloce, geniale. Sembra una magia!
+                    </p>
+                </div>
+                <div class="reviews-item">
+                    <div class="reviews-item__head">
+                        <div class="reviews-item-info">
+                            <div class="reviews-item__name">Chiara</div>
+                            <div class="reviews-item__age">21 anni</div>
+                        </div>
+                        <div class="reviews-item__rating">
+                            <img src="img/reviews-stars.svg" alt="">
+                        </div>
+                        <div class="reviews-item__position">
+                            Bologna - Studentessa
+                        </div>
+                        <div class="reviews-item__img">
+                            <img src="img/reviews-item-3.png" alt="">
+                        </div>
+                    </div>
+                    
+                    <p class="reviews-item__descr">
+                        Comprato dopo averlo visto su TikTok e OMG, l'effetto 'glass hair' è verissimo! I capelli vengono super-instagrammabili, la luce rimbalza che è una meraviglia. Già due amiche me l'hanno copiato. Virale!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+		<section id="science" class="science">
+    <div class="container">
+        <h2 class="title science__title">La Scienza Dietro la Magia: <span>3 Segreti Dentro</span><br> Ogni Goccia di Shine Essence</h2>
+        <div class="science-items">
+            <div class="science-item">
+                <h3 class="science-item__title">RICOSTRUZIONE ISTANTANEA</h3>
+                <div class="science-item__img">
+                    <img src="img/science-new-1.jpeg" alt="">
+                </div>
+                <p class="science-item__descr">La nostra Cheratina Idrolizzata agisce come un micro-cemento intelligente. Rileva le imperfezioni e le micro-fratture sulla superficie del capello e le riempie istantaneamente. Il risultato? Una base perfettamente liscia e forte, pronta a risplendere.</p>
+            </div>
+            <div class="science-item">
+                <h3 class="science-item__title">EFFETTO SPECCHIO LIQUIDO</h3>
+                <div class="science-item__img">
+                    <img src="img/science-new-2.jpg" alt="">
+                </div>
+                <p class="science-item__descr">Le preziose proteine della Seta Idrolizzata creano un velo ultra-sottile e leggerissimo che avvolge ogni singolo capello. Questa "pellicola di luce" cattura e riflette la luce da ogni angolazione, creando quella brillantezza liquida e multi-dimensionale che vedi sulle copertine.</p>
+            </div>
+            <div class="science-item">
+                <h3 class="science-item__title">VITA E LEGGEREZZA ASSOLUTA</h3>
+                <div class="science-item__img">
+                    <img src="img/science-new-3.jpg" alt="">
+                </div>
+                <p class="science-item__descr">L'Olio di Mandorle Dolci, emulsionato con la nostra tecnologia avanzata, infonde idratazione e nutrimento senza appesantire. Dimentica l'effetto "unto". I tuoi capelli rimangono ariosi, leggeri, liberi di muoversi. Vivi.</p>
+            </div>
+        </div>
+    </div>
+</section>
+		<section id="transformation" class="transformation">
+    <div class="container">
+        <div class="transformation__inner">
+            <h2 class="title transformation__title">La trasformazione è reale. <span>Ed è istantanea.</span></h2>
+            <h3 class="transformation__subtitle">Guarda tu stessa. Nessun filtro, nessuna luce da studio. Solo donne vere e il potere di una singola applicazione di Shine Essence.</h3>
+            <div class="transformation-items">
+                <div class="transformation-item">
+                    <h4 class="transformation-item__title">DA CRESPI A SETOSA</h4>
+                    <div class="transformation-item__video">
+                        <img src="img/transformation-item-1.jpg" alt="">
+                        <div class="play-btn">
+                            <img src="img/play-icon.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="transformation-item">
+                    <h4 class="transformation-item__title">DA SPENTI A ABBAGLIANTI</h4>
+                    <div class="transformation-item__video">
+                        <img src="img/transformation-item-2.jpg" alt="">
+                        <div class="play-btn">
+                            <img src="img/play-icon.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="transformation-item">
+                    <h4 class="transformation-item__title">DA INCONTROLLABILI A OBBEDIENTI</h4>
+                    <div class="transformation-item__video">
+                        <img src="img/transformation-item-3.jpg" alt="">
+                        <div class="play-btn">
+                            <img src="img/play-icon.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="transformation-item">
+                    <h4 class="transformation-item__title">DA SECCHI A VIVI</h4>
+                    <div class="transformation-item__video">
+                        <img src="img/transformation-item-4.jpg" alt="">
+                        <div class="play-btn">
+                            <img src="img/play-icon.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+		<section id="steps" class="steps">
+    <div class="container">
+        <div class="steps__inner">
+            <h2 class="title steps__title">Il Tuo Rituale di Luce: <span>3 Gesti, 30 Secondi.</span></h2>
+            <h3 class="steps__subtitle">La parte migliore? Non serve calore, non serve attesa, non serve nessuna abilità speciale. Se sai usare uno spray, sai già come ottenere capelli da copertina.</h3>
+            <div class="steps-items">
+                <div class="steps-item">
+                    <div class="steps-item__num">1</div>
+                    <h4 class="steps-item__title">VAPORIZZA</h4>
+                    <div class="steps-item__icon">
+                        <img src="img/steps-item-1.svg" alt="icon">
+                    </div>
+                    <p class="steps-item__descr">
+                        Tieni il flacone a circa 20 cm di distanza e applica 2-4 spruzzi su capelli asciutti o umidi. La sua nuvola ultra-leggera coprirà ogni ciocca.
+                    </p>
+                </div>
+                <div class="steps-item">
+                    <div class="steps-item__num">2</div>
+                    <h4 class="steps-item__title">DISTRIBUISCI</h4>
+                    <div class="steps-item__icon">
+                        <img src="img/steps-item-2.svg" alt="icon">
+                    </div>
+                    <p class="steps-item__descr">
+                        Passa delicatamente le dita o un pettine tra i capelli per distribuire il siero in modo uniforme, dalla radice alla punta. Sentirai subito la morbidezza.
+                    </p>
+                </div>
+                <div class="steps-item">
+                    <div class="steps-item__num">3</div>
+                    <h4 class="steps-item__title">RISPLENDI</h4>
+                    <div class="steps-item__icon">
+                        <img src="img/steps-item-3.svg" alt="icon">
+                    </div>
+                    <p class="steps-item__descr">
+                        <strong>Fatto. Non c'è un terzo passo.</strong> <br> Ammira la trasformazione istantanea allo specchio. Esci e conquista il mondo.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+		<section id="order" class="order">
+    <div class="container">
+        <div class="order__inner">
+            <h2 class="title order__title">Allora, sei pronta a far girare la testa?</h2>
+            <h3 class="order__subtitle">Hai visto la trasformazione. Hai letto le storie. Hai capito il segreto. Ora tocca a te. Scegli di non essere più "normale", scegli di essere spettacolare. Ogni singolo giorno.</h3>
+            <div class="order-wrapper">
+                <div class="order-left">
+                    <div class="order-info">
+                        <h3 class="order-info__title">POTERE ASSOLUTO</h3>
+                        <h4 class="order-info__subtitle">La Scelta delle Donne che Sanno</h4>
+                        <div class="order-info__wrap">
+                            <div class="order-info__left">2 Flaconi Shine Essence Offerta Esclusiva:</div>
+                            <div class="order-info__price">
+                                <div class="order-info__price-new">€49,99</div>
+                                <div class="order-info__price-old">€99</div>
+                            </div>
+                        </div>
+                        <p class="order-info__descr">
+                            (Un flacone per casa, uno sempre con te. Il tuo segreto è al sicuro.)
+                        </p>
+                    </div>
+                    <ul class="order__list hide-tablet">
+                        <p>Ecco cosa stai per ottenere:</p>
+                        <li class="order__item">
+                            Una brillantezza a specchio che cattura ogni sguardo.
+                        </li>
+                        <li class="order__item">
+                            L'addio definitivo a capelli crespi e spenti.
+                        </li>
+                        <li class="order__item">
+                            La sicurezza assoluta di un'immagine sempre impeccabile.
+                        </li>
+                        <li class="order__item">
+                            Più tempo per te, meno tempo davanti allo specchio.
+                        </li>
+                        <li class="order__item">
+                            Il segreto della bella figura che tutte ti invidieranno.
+                        </li>
+                    </ul>
+                </div>
+                <div class="order__img">
+                    <picture>
+                        <source media="(max-width: 650px)" srcset="img/order-img-mobile.png">
+                        <source media="(max-width: 1024px)" srcset="img/order-img-tablet.png">
+                        <img src="img/order-img.png" alt="order">
+                    </picture>
+                </div>
+            </div>
+            <ul class="order__list show-tablet">
+                <p>Ecco cosa stai per ottenere:</p>
+                <li class="order__item">
+                    Una brillantezza a specchio che cattura ogni sguardo.
+                </li>
+                <li class="order__item">
+                    L'addio definitivo a capelli crespi e spenti.
+                </li>
+                <li class="order__item">
+                    La sicurezza assoluta di un'immagine sempre impeccabile.
+                </li>
+                <li class="order__item">
+                    Più tempo per te, meno tempo davanti allo specchio.
+                </li>
+                <li class="order__item">
+                    Il segreto della bella figura che tutte ti invidieranno.
+                </li>
+            </ul>
+            <div class="order__bottom">
+                <ul class="order__bottom-list">
+                    <li class="order__bottom-item">
+                        Pagamento Sicuro alla Consegna
+                    </li>
+                    <li class="order__bottom-item">
+                        Consegna Rapida
+                    </li>
+                    <li class="order__bottom-item">
+                        Formula Italiana Approvata
+                    </li>
+                </ul>
+                <div class="order__bottom-message">
+                    <strong>L'unico rischio? Continuare a sognare capelli impeccabili invece di sfoggiarli.</strong> La nostra garanzia "Soddisfatta o Rimborsata" mette tutto il rischio sulle nostre spalle. Tu non hai assolutamente nulla da perdere, tranne la frustrazione dei capelli spenti.
+                </div>
+            </div>
+            <a href="order.html" class="order__btn">SÌ, VOGLIO LA MIA TRASFORMAZIONE ORA!</a>
+        </div>
+    </div>
+</section>
+		<section id="faq" class="faq">
+    <div class="container">
+        <h2 class="title faq__title">
+            Hai ancora dubbi? È normale. <br>
+            Qui trovi tutte le risposte.
+        </h2>
+        <div class="faq__inner">
+            <div class="faq-item">
+                <div class="faq-item__head">
+                    <p>Quando arriva il mio ordine? E come pago?</p>
+                    <div class="faq-item__icon">
+                        
+                        <svg class="faq-plus" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="34" height="34" rx="17" fill="#68CAB7"/>
+                            <path d="M8 17H26" stroke="white" stroke-width="2"/>
+                            <path d="M17 26V8" stroke="white" stroke-width="2"/>
+                        </svg>
+    
+                        <svg class="faq-minus" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="34" height="34" rx="17" fill="#68CAB7"/>
+                            <path d="M8 17H26" stroke="white" stroke-width="2"/>
+                        </svg>
+    
+                    </div>
+                </div>
+                <div class="faq-item__descr">
+                    <p>La velocità è tutto. Spediamo in tutta Italia in 24/48 ore, gratuitamente. Paghi in contanti, direttamente al corriere quando ti consegna il pacco (Pagamento alla Consegna). Massima sicurezza, zero rischi.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-item__head">
+                    <p>Quando arriva il mio ordine? E come pago?</p>
+                    <div class="faq-item__icon">
+                        
+                        <svg class="faq-plus" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="34" height="34" rx="17" fill="#68CAB7"/>
+                            <path d="M8 17H26" stroke="white" stroke-width="2"/>
+                            <path d="M17 26V8" stroke="white" stroke-width="2"/>
+                        </svg>
+    
+                        <svg class="faq-minus" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="34" height="34" rx="17" fill="#68CAB7"/>
+                            <path d="M8 17H26" stroke="white" stroke-width="2"/>
+                        </svg>
+    
+                    </div>
+                </div>
+                <div class="faq-item__descr">
+                    <p>La velocità è tutto. Spediamo in tutta Italia in 24/48 ore, gratuitamente. Paghi in contanti, direttamente al corriere quando ti consegna il pacco (Pagamento alla Consegna). Massima sicurezza, zero rischi.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-item__head">
+                    <p>Funziona su tutti i tipi di capelli? Anche tinti o ricci?</p>
+                    <div class="faq-item__icon">
+                        
+                        <svg class="faq-plus" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="34" height="34" rx="17" fill="#68CAB7"/>
+                            <path d="M8 17H26" stroke="white" stroke-width="2"/>
+                            <path d="M17 26V8" stroke="white" stroke-width="2"/>
+                        </svg>
+    
+                        <svg class="faq-minus" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="34" height="34" rx="17" fill="#68CAB7"/>
+                            <path d="M8 17H26" stroke="white" stroke-width="2"/>
+                        </svg>
+    
+                    </div>
+                </div>
+                <div class="faq-item__descr">
+                    <p>La velocità è tutto. Spediamo in tutta Italia in 24/48 ore, gratuitamente. Paghi in contanti, direttamente al corriere quando ti consegna il pacco (Pagamento alla Consegna). Massima sicurezza, zero rischi.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-item__head">
+                    <p>Devo usarlo ogni giorno? E quanto dura un flacone?</p>
+                    <div class="faq-item__icon">
+                        
+                        <svg class="faq-plus" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="34" height="34" rx="17" fill="#68CAB7"/>
+                            <path d="M8 17H26" stroke="white" stroke-width="2"/>
+                            <path d="M17 26V8" stroke="white" stroke-width="2"/>
+                        </svg>
+    
+                        <svg class="faq-minus" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="34" height="34" rx="17" fill="#68CAB7"/>
+                            <path d="M8 17H26" stroke="white" stroke-width="2"/>
+                        </svg>
+    
+                    </div>
+                </div>
+                <div class="faq-item__descr">
+                    <p>La velocità è tutto. Spediamo in tutta Italia in 24/48 ore, gratuitamente. Paghi in contanti, direttamente al corriere quando ti consegna il pacco (Pagamento alla Consegna). Massima sicurezza, zero rischi.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-item__head">
+                    <p>È sicuro? Contiene siliconi pesanti, parabeni o solfati?</p>
+                    <div class="faq-item__icon">
+                        
+                        <svg class="faq-plus" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="34" height="34" rx="17" fill="#68CAB7"/>
+                            <path d="M8 17H26" stroke="white" stroke-width="2"/>
+                            <path d="M17 26V8" stroke="white" stroke-width="2"/>
+                        </svg>
+    
+                        <svg class="faq-minus" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="34" height="34" rx="17" fill="#68CAB7"/>
+                            <path d="M8 17H26" stroke="white" stroke-width="2"/>
+                        </svg>
+    
+                    </div>
+                </div>
+                <div class="faq-item__descr">
+                    <p>La velocità è tutto. Spediamo in tutta Italia in 24/48 ore, gratuitamente. Paghi in contanti, direttamente al corriere quando ti consegna il pacco (Pagamento alla Consegna). Massima sicurezza, zero rischi.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-item__head">
+                    <p>La garanzia "Soddisfatta o Rimborsata" è reale? Come funziona?</p>
+                    <div class="faq-item__icon">
+                        
+                        <svg class="faq-plus" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="34" height="34" rx="17" fill="#68CAB7"/>
+                            <path d="M8 17H26" stroke="white" stroke-width="2"/>
+                            <path d="M17 26V8" stroke="white" stroke-width="2"/>
+                        </svg>
+    
+                        <svg class="faq-minus" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="34" height="34" rx="17" fill="#68CAB7"/>
+                            <path d="M8 17H26" stroke="white" stroke-width="2"/>
+                        </svg>
+    
+                    </div>
+                </div>
+                <div class="faq-item__descr">
+                    <p>La velocità è tutto. Spediamo in tutta Italia in 24/48 ore, gratuitamente. Paghi in contanti, direttamente al corriere quando ti consegna il pacco (Pagamento alla Consegna). Massima sicurezza, zero rischi.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-item__head">
+                    <p>Ok, mi avete convinta. Come posso ordinare?</p>
+                    <div class="faq-item__icon">
+                        
+                        <svg class="faq-plus" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="34" height="34" rx="17" fill="#68CAB7"/>
+                            <path d="M8 17H26" stroke="white" stroke-width="2"/>
+                            <path d="M17 26V8" stroke="white" stroke-width="2"/>
+                        </svg>
+    
+                        <svg class="faq-minus" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="34" height="34" rx="17" fill="#68CAB7"/>
+                            <path d="M8 17H26" stroke="white" stroke-width="2"/>
+                        </svg>
+    
+                    </div>
+                </div>
+                <div class="faq-item__descr">
+                    <p>La velocità è tutto. Spediamo in tutta Italia in 24/48 ore, gratuitamente. Paghi in contanti, direttamente al corriere quando ti consegna il pacco (Pagamento alla Consegna). Massima sicurezza, zero rischi.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    let faqTrigger = document.querySelectorAll('.faq-item__head')
+    faqTrigger.forEach((trigger) =>{
+        trigger.addEventListener('click', ()=>{
+            let faqItem = trigger.closest('.faq-item')
+            let faqDescr = faqItem.querySelector('.faq-item__descr')
+            faqItem.classList.toggle('active')
+            faqDescr.classList.toggle('active')
+        })
+        
+    })
+</script>
+
+		<footer class="footer">
+    <div class="container">
+        <div class="footer__logo show-tablet">
+            <img src="img/logo.svg" alt="logo">
+        </div>
+        <div class="footer-top">
+            <div class="footer__logo hide-tablet">
+                <img src="img/logo.svg" alt="logo">
+            </div>
+            <div class="footer__menu hide-tablet">
+                <li><a href="#believe">Giudizi</a></li>
+                <li><a href="#science">Come funziona</a></li>
+                <li><a href="#transformation">Trasformazione</a></li>
+                <li><a href="#steps">Come funziona</a></li>
+                <li><a href="#order">Come usare</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="">Informativa sulla privacy</a></li>
+                <li><a href="">Termini e condizion</a></li>
+            </div>
+            <div class="footer__menu show-tablet">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#believe">Giudizi</a></li>
+                    <li><a href="#science">Come funziona</a></li>
+
+                </ul>
+                <ul>
+                    <li><a href="#transformation">Trasformazione</a></li>
+                    <li><a href="#steps">Come funziona</a></li>
+                    <li><a href="#order">Come usare</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="">Informativa sulla privacy</a></li>
+                    <li><a href="">Termini e condizion</a></li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    <div class="footer-privacy">
+        Privacy policy
+    </div>
+</footer>
+	</main>
+	<script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+	<script defer src="js/main.js"></script>
+</body>
+</html>

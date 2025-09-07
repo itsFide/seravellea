@@ -1,0 +1,72 @@
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="header__logo">
+                <a href="">
+                    <img src="img/logo.svg" alt="Logo">
+                </a>
+            </div>
+            <div class="header__burger burger">
+                <span></span><span></span><span></span>
+            </div>
+            <div class="header__menu">
+                <div class="show-tablet mob-close">
+                    <img src="img/close-icon.svg" alt="">
+                </div>
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a href="#believe" class="header__link">Giudizi</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#science" class="header__link">Come funziona</a>
+                            
+                        </li>
+                        <li class="header__item">
+                            <a href="#transformation" class="header__link">Trasformazione</a>
+                            
+                        </li>
+                        <li class="header__item">
+                            <a href="#steps" class="header__link">Come funziona</a>
+                            
+                        </li>
+                        <li class="header__item">
+                            <a href="#order" class="header__link">Come usare</a>
+                            
+                        </li>
+                        <li class="header__item">
+                            <a href="#faq" class="header__link">FAQ</a>
+                            
+                        </li>
+                        <li class="header__item">
+                            <a href="" class="header__link">Informativa sulla privacy</a>
+                            
+                        </li>
+                        <li class="header__item">
+                            <a href="" class="header__link">Termini e condizion</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            
+        </div>
+    </div>
+</header>
+<script>
+    
+    document.addEventListener("DOMContentLoaded", function() {
+    const burger = document.querySelector(".header__burger");
+    const mobileNav = document.querySelector(".header__menu");
+    const closeBtn = document.querySelector(".mob-close");
+
+ 
+    burger.addEventListener("click", () => {
+        mobileNav.classList.add("active");
+    });
+
+    closeBtn.addEventListener("click", () => {
+        mobileNav.classList.remove("active");
+    });
+        
+    });
+</script>

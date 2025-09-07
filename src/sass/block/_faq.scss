@@ -1,0 +1,189 @@
+.faq {
+    padding: 120px 0 100px 0;
+    // .faq__title
+
+    &__title {
+        text-align: center;
+    }
+
+    // .faq__inner
+
+    &__inner {
+        margin-top: 30px;
+    }
+}
+
+.faq-item {
+    border: 1px solid #CDCDCD;
+    margin-bottom: 20px;
+    border-radius: 18px;
+    cursor: pointer;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    // .faq-item__head
+
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+        align-items: center;
+        & p{
+            line-height: 100%;
+            font-size: 36px;
+            font-family: "Bebas Neue";
+            font-weight: 400;
+        }
+    }
+
+    // .faq-item__icon
+
+    &__icon {
+        width: 34px;
+        height: 34px;
+        & svg{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    // .faq-item__descr
+
+    &__descr {
+        display: block;
+        padding: 20px 30px 30px 30px;
+        font-size: 20px;
+        line-height: 24px;
+        font-family: "Inter";
+        border-top: 1px solid #F0F0F0;
+        display: none;
+        &.active {
+            display: block;
+        }
+    }
+}
+.faq-plus {
+}
+.faq-minus {
+    display: none;
+}
+.faq-item.active .faq-minus{
+    display: block;
+}
+.faq-item.active .faq-plus{
+    display: none;
+}
+@media (max-width: 1919px) {
+    .faq {
+        padding: 6.25vw 0 5.208vw 0;
+
+        &__inner {
+            margin-top: 1.563vw;
+        }
+    }
+
+    .faq-item {
+        border: 0.052vw solid #CDCDCD;
+        margin-bottom: 1.042vw;
+        border-radius: 0.938vw;
+
+        &__head {
+            padding: 1.563vw;
+
+            & p {
+                font-size: 1.875vw;
+            }
+        }
+
+        &__icon {
+            width: 1.771vw;
+            height: 1.771vw;
+        }
+
+        &__descr {
+            padding: 1.042vw 1.563vw 1.563vw 1.563vw;
+            font-size: 1.042vw;
+            line-height: 1.25vw;
+            border-top: 0.052vw solid #F0F0F0;
+        }
+    }
+}
+@media (max-width: 1024px) {
+    .faq {
+        padding: 10.417vw 0 10.417vw 0;
+
+        &__inner {
+            margin-top: 2.604vw;
+        }
+    }
+
+    .faq-item {
+        border: 0.130vw solid #CDCDCD;
+        margin-bottom: 2.604vw;
+        border-radius: 2.344vw;
+
+        &__head {
+            padding: 3.906vw;
+
+            & p {
+                font-size: 4.167vw;
+            }
+        }
+
+        &__icon {
+            width: 4.427vw;
+            height: 4.427vw;
+        }
+
+        &__descr {
+            padding: 2.604vw 3.906vw 3.906vw 3.906vw;
+            font-size: 2.604vw;
+            line-height: 3.125vw;
+            border-top: 0.130vw solid #F0F0F0;
+        }
+    }
+}
+
+
+
+@media (max-width: 650px) {
+    .faq {
+        padding: 0 0 12.077vw 0;
+
+        &__inner {
+            margin-top: 6.039vw;
+        }
+        &__title{
+            font-size: 9.179vw;
+            & br{
+                display: none;
+            }
+        }
+    }
+
+    .faq-item {
+        border: 0.242vw solid #CDCDCD;
+        margin-bottom: 2.415vw;
+        border-radius: 4.348vw;
+
+        &__head {
+            padding: 3.623vw;
+
+            & p {
+                font-size: 4.348vw;
+            }
+        }
+
+        &__icon {
+            width: 4.831vw;
+            height: 4.831vw;
+        }
+
+        &__descr {
+            padding: 1.208vw 0.966vw 3.623vw 3.623vw;
+            font-size: 3.865vw;
+            line-height: 4.589vw;
+            border-top: 0.242vw solid #F0F0F0;
+        }
+    }
+}

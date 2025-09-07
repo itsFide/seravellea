@@ -1,0 +1,30 @@
+<svg width="673" height="262" viewBox="0 0 673 262" fill="none" xmlns="http://www.w3.org/2000/svg">
+<foreignObject x="-30" y="-30" width="733" height="322"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(15px);clip-path:url(#bgblur_1_3_204_clip_path);height:100%;width:100%"></div></foreignObject><g data-figma-bg-blur-radius="30">
+<g clip-path="url(#clip0_3_204)">
+<rect width="673" height="262" rx="12" fill="#FAD15A" fill-opacity="0.05"/>
+<g filter="url(#filter1_f_3_204)">
+<circle cx="641.5" cy="29.5" r="63.5" fill="#FAD15A" fill-opacity="0.8"/>
+</g>
+<g filter="url(#filter2_f_3_204)">
+<circle cx="10.5" cy="294.5" r="63.5" fill="#FAD15A" fill-opacity="0.8"/>
+</g>
+</g>
+<rect x="0.5" y="0.5" width="672" height="261" rx="11.5" stroke="#FAD15A"/>
+</g>
+<defs>
+<clipPath id="bgblur_1_3_204_clip_path" transform="translate(30 30)"><rect width="673" height="262" rx="12"/>
+</clipPath><filter id="filter1_f_3_204" x="518" y="-94" width="247" height="247" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="30" result="effect1_foregroundBlur_3_204"/>
+</filter>
+<filter id="filter2_f_3_204" x="-113" y="171" width="247" height="247" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="30" result="effect1_foregroundBlur_3_204"/>
+</filter>
+<clipPath id="clip0_3_204">
+<rect width="673" height="262" rx="12" fill="white"/>
+</clipPath>
+</defs>
+</svg>

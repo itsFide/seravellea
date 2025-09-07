@@ -1,0 +1,237 @@
+.header {
+    background: #0D7161;
+    // .header__inner
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 0 23px 0;
+    }
+
+    // .header__logo
+
+    &__logo {
+        & img{
+            width: 103px;
+            height: 42px;
+        }
+    }
+
+    // .header__menu
+
+    &__menu {
+    }
+
+    // .header__nav
+
+    &__nav {
+        margin-top: 20px;
+    }
+
+    // .header__list
+
+    &__list {
+        
+        display: flex;
+        align-items: center;
+    }
+
+    // .header__item
+
+    &__item {
+        margin-right: 30px;
+        list-style:none;
+
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+
+    // .header__link
+
+    &__link {
+        font-size: 18px;
+        color: #fff;
+        text-decoration: none;
+        
+    }
+}
+.burger {
+    display: none;
+}
+@media screen and (max-width:1919px) {
+  .header {
+    &__inner {
+      padding: 0.781vw 0 1.198vw 0;
+    }
+
+    // .header__logo
+    &__logo {
+      & img {
+        width: 5.365vw;
+        height: 2.188vw;
+      }
+    }
+
+    // .header__menu
+    &__nav {
+      margin-top: 1.042vw;
+    }
+
+    // .header__list
+    &__list {}
+
+    // .header__item
+    &__item {
+      margin-right: 1.563vw;
+    }
+
+    // .header__link
+    &__link {
+      font-size: 0.938vw;
+    }
+  }
+}
+@media screen and (max-width:1024px) {
+  .header {
+    &__inner {
+      padding: 1.693vw 0;
+      justify-content: start;
+      position: relative;
+    }
+    .burger {
+      display: block;
+      width: 6.510vw;
+      height: 6.510vw;
+      position: relative;
+      margin-left: auto;
+      background: #FFFFFF;
+      border-radius: 100%;
+      & span {
+        width: 2.604vw;
+        height: 0.260vw;
+        position: absolute;
+        border-radius: 0.521vw;
+        background: #0D7161;
+        left: 50%;
+        transform: translateX(-50%);
+        &:nth-child(1) {
+          top: 2.474vw;
+        }
+        &:nth-child(2) {
+          top: 3.125vw;
+        }
+        &:nth-child(3) {
+          bottom: 2.474vw;
+        }
+      }
+    }
+    &__logo {
+      margin-left: auto;
+      & img {
+        width: 13.932vw;
+        height: 5.729vw;
+      }
+    }
+    &__nav {
+      padding: 13.021vw;
+    }
+    &__menu {
+      display: none;
+      position: absolute;
+      width: 100%;
+      height: max;
+      top: 0;
+      left: 0;
+      z-index: 10;
+      background: #FFFFFF;
+      &.active {
+        display: block;
+      }
+    }
+    .mob-close {
+      position: absolute;
+      top: 5.208vw;
+      right: 2.604vw;
+      cursor: pointer;
+      width: 2.344vw;
+      height: 2.344vw;
+      & img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &__list {
+      flex-direction: column;
+    }
+    &__item {
+      margin-right: 0;
+      text-align: center;
+      margin-bottom: 6.510vw;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    &__link {
+      color: #414141;
+      font-size: 2.604vw;
+    }
+  }
+}
+@media screen and (max-width:650px) {
+  .header {
+    &__inner {
+      padding: 5.072vw 0;
+    }
+    .burger {
+      width: 7.246vw;
+      height: 3.140vw;
+      background: transparent;
+      & span {
+        width: 100%;
+        height: 0.725vw;
+        border-radius: 0;
+        background: #fff;
+        left: 0%;
+        transform: translateX(0);
+        &:nth-child(1) {
+          top: 0;
+        }
+        &:nth-child(2) {
+          top: 1.208vw;
+        }
+        &:nth-child(3) {
+          bottom: 0;
+        }
+      }
+    }
+    &__logo {
+      margin-left: auto;
+      & img {
+        width: 22.222vw;
+        height: 9.179vw;
+      }
+    }
+    &__nav {
+      padding: 24.155vw 0 19.324vw 0;
+    }
+    &__menu {
+      top: 2.415vw;
+    }
+    .mob-close {
+      position: absolute;
+      top: 5.314vw;
+      right: 5.314vw;
+      width: 4.831vw;
+      height: 4.831vw;
+    }
+    &__item {
+      margin-bottom: 3.623vw;
+    }
+    &__link {
+      font-size: 4.348vw;
+    }
+  }
+}
+

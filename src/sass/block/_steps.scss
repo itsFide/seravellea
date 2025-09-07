@@ -1,0 +1,249 @@
+.steps {
+    padding: 97px 0 120px 0;
+    // .steps__inner
+
+    &__inner {
+    }
+
+    // .steps__title
+
+    &__title {
+        text-align: center;
+    }
+
+    // .steps__subtitle
+
+    &__subtitle {
+        margin-top: 21px;
+        font-family: "Bebas Book";
+        font-size: 46px;
+        font-weight: 400;
+        line-height: 100%;
+        text-align: center;
+    }
+}
+
+.steps-items {
+    display: flex;
+    margin-top: 70px;
+}
+.steps-item {
+    width: 453px;
+    background-image: url(../img/steps-bg.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 20px;
+    padding: 0 22px 42px 22px;
+    &:last-child {
+        margin-right: 0;
+    }
+    &__num {
+        font-size: 76px;
+        font-family: "Bebas Neue";
+        line-height: 100%;
+        color: #000;
+        text-align: center;
+    }
+
+    // .steps-item__title
+
+    &__title {
+        margin-top: 52px;
+        font-size: 36px;
+        font-family: "Bebas Neue";
+        line-height: 100%;
+        text-align: center;
+        font-weight: 400;
+
+    }
+
+    // .steps-item__icon
+
+    &__icon {
+        width: 145px;
+        height: 155px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 28px;
+        & img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    // .steps-item__descr
+
+    &__descr {
+        text-align: center;
+        margin-top: 40px;
+        font-size: 24px;
+        font-family: "Inter";
+        line-height: 29px;
+    }
+}
+
+
+@media screen and (max-width: 1919px) {
+    .steps {
+        padding: 5.052vw 0 6.250vw 0;
+
+        &__subtitle {
+            margin-top: 1.094vw;
+            font-size: 2.396vw;
+        }
+    }
+
+    .steps-items {
+        margin-top: 3.646vw;
+    }
+
+    .steps-item {
+        width: 23.594vw;
+        margin-right: 1.042vw;
+        padding: 0 1.146vw 2.188vw 1.146vw;
+
+        &__num {
+            font-size: 3.958vw;
+        }
+
+        &__title {
+            margin-top: 2.708vw;
+            font-size: 1.875vw;
+        }
+
+        &__icon {
+            width: 7.552vw;
+            height: 8.073vw;
+            margin-top: 1.458vw;
+        }
+
+        &__descr {
+            margin-top: 2.083vw;
+            font-size: 1.250vw;
+            line-height: 1.510vw;
+        }
+    }
+}
+@media screen and (max-width: 1024px) {
+    .steps {
+        padding: 7.813vw 0;
+
+        &__subtitle {
+            margin-top: 2.604vw;
+            font-size: 5.990vw;
+        }
+    }
+
+    .steps-items {
+        margin-top: 5.208vw;
+        flex-direction: column;
+    }
+
+    .steps-item {
+        width: 100%;
+        margin-right: 0;
+        padding: 0 5.208vw 4.557vw 5.208vw;
+        margin-bottom: 6.901vw;
+        background-image: url(../img/steps-bg-tablet.svg);
+        background-size: 100%;
+
+        &:last-child {
+            margin-bottom: 0;
+            background-image: url(../img/steps-bg-tablet-3.svg);
+        }
+
+        &__num {
+            font-size: 10.677vw;
+        }
+
+        &__title {
+            margin-top: 2.734vw;
+            font-size: 4.688vw;
+        }
+
+        &__icon {
+            width: 18.880vw;
+            height: 19.141vw;
+            margin-top: 2.604vw;
+        }
+
+        &__descr {
+            margin-top: 2.604vw;
+            font-size: 3.125vw;
+            line-height: 3.776vw;
+            font-weight: 300;
+
+            & br {
+                display: none;
+            }
+
+            & strong {
+                font-weight: 700;
+            }
+        }
+    }
+}
+@media screen and (max-width: 650px) {
+    .steps {
+        padding: 14.493vw 0;
+
+        &__subtitle {
+            margin-top: 4.348vw;
+            font-size: 5.797vw;
+        }
+    }
+
+    .steps-items {
+        margin-top: 7.971vw;
+    }
+
+    .steps-item {
+        padding: 0 5.314vw 4.831vw 5.314vw;
+        margin-bottom: 9.662vw;
+        background-image: url(../img/steps-bg-mobile.svg);
+        background-size: 100%;
+
+        &:nth-child(1) .steps-item__icon {
+            width: 14.493vw;
+            height: 23.671vw;
+        }
+
+        &:nth-child(2) .steps-item__icon {
+            width: 21.498vw;
+            height: 25.121vw;
+        }
+
+        &:nth-child(3) .steps-item__icon {
+            width: 21.498vw;
+            height: 23.430vw;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+            background-image: url(../img/steps-bg-mobile-3.svg);
+        }
+
+        &__num {
+            font-size: 12.077vw;
+        }
+
+        &__title {
+            margin-top: 7.246vw;
+            font-size: 6.280vw;
+        }
+
+        &__icon {
+            width: 21.498vw;
+            height: 25.845vw;
+            margin-top: 4.831vw;
+        }
+
+        &__descr {
+            margin-top: 4.831vw;
+            font-size: 4.348vw;
+            line-height: 5.314vw;
+        }
+    }
+}

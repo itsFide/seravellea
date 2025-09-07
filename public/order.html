@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Seravellea</title>
+	<link
+	rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+	/>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet", href="css/order.css">
+
+</head>
+<body>
+	<main>
+		<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="header__logo">
+                <a href="">
+                    <img src="img/logo.svg" alt="Logo">
+                </a>
+            </div>
+            <div class="header__burger burger">
+                <span></span><span></span><span></span>
+            </div>
+            <div class="header__menu">
+                <div class="show-tablet mob-close">
+                    <img src="img/close-icon.svg" alt="">
+                </div>
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a href="#believe" class="header__link">Giudizi</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#science" class="header__link">Come funziona</a>
+                            
+                        </li>
+                        <li class="header__item">
+                            <a href="#transformation" class="header__link">Trasformazione</a>
+                            
+                        </li>
+                        <li class="header__item">
+                            <a href="#steps" class="header__link">Come funziona</a>
+                            
+                        </li>
+                        <li class="header__item">
+                            <a href="#order" class="header__link">Come usare</a>
+                            
+                        </li>
+                        <li class="header__item">
+                            <a href="#faq" class="header__link">FAQ</a>
+                            
+                        </li>
+                        <li class="header__item">
+                            <a href="" class="header__link">Informativa sulla privacy</a>
+                            
+                        </li>
+                        <li class="header__item">
+                            <a href="" class="header__link">Termini e condizion</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            
+        </div>
+    </div>
+</header>
+<script>
+    
+    document.addEventListener("DOMContentLoaded", function() {
+    const burger = document.querySelector(".header__burger");
+    const mobileNav = document.querySelector(".header__menu");
+    const closeBtn = document.querySelector(".mob-close");
+
+ 
+    burger.addEventListener("click", () => {
+        mobileNav.classList.add("active");
+    });
+
+    closeBtn.addEventListener("click", () => {
+        mobileNav.classList.remove("active");
+    });
+        
+    });
+</script>
+
+		<section class="form">
+            <div class="container">
+                <div class="form__inner">
+                    <div class="form-top">
+                        <h2 class="form__title title">ULTIMO PASSO: Inserisci i tuoi dati per <br>bloccare il tuo flacone in REGALO</h2>
+                        <div class="form-timer show-tablet">
+                            <h3>L'offerta termina tra:</h3>
+                            <div class="countdown">
+                                <div class="ring" id="ring-hrs">
+                                    <svg viewBox="0 0 120 120" aria-hidden="true">
+                                        <circle class="track" cx="60" cy="60" r="54"></circle>
+                                        <circle class="progress" cx="60" cy="60" r="54"></circle>
+                                    </svg>
+                                    <div class="value" id="val-hrs">08</div>
+                                    <div class="label">Orologio</div>
+                                </div>
+                            
+                                <div class="ring" id="ring-min">
+                                    <svg viewBox="0 0 120 120" aria-hidden="true">
+                                        <circle class="track" cx="60" cy="60" r="54"></circle>
+                                        <circle class="progress" cx="60" cy="60" r="54"></circle>
+                                    </svg>
+                                    <div class="value" id="val-min">33</div>
+                                    <div class="label">Minuti</div>
+                                </div>
+                            
+                                <div class="ring" id="ring-sec">
+                                    <svg viewBox="0 0 120 120" aria-hidden="true">
+                                        <circle class="track" cx="60" cy="60" r="54"></circle>
+                                        <circle class="progress" cx="60" cy="60" r="54"></circle>
+                                    </svg>
+                                    <div class="value" id="val-sec">57</div>
+                                    <div class="label">Seconde</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-wrapper">
+                        <div class="form__left">
+                            <form action="" method="post">
+                                <div class="form__item">
+                                    <p>Nome e Cognome <span>*</span></p>
+                                    <input type="text" name="name" placeholder="Alessandro Fabbri">
+                                </div>
+                                <div class="form__item">
+                                    <p>Telefono (Meglio Cellulare) <span>*</span></p>
+                                    <input type="text" name="name" placeholder="+39 ___ ___ ____">
+                                </div>
+                                <div class="form__item">
+                                    <p>Città</p>
+                                    <input type="text" name="name" placeholder="Aosta">
+                                </div>
+                                <div class="form__item">
+                                    <p>CAP <span>*</span></p>
+                                    <input type="text" name="name" placeholder="@alice.it">
+                                </div>
+                                <div class="form__item">
+                                    <p>Indirizzo e n. civico <span>*</span></p>
+                                    <input type="text" name="name" placeholder="VIA ROMA 123">
+                                </div>
+                                <div class="form__item">
+                                    <p>Note per il corriere</p>
+                                    <input type="text" name="name" placeholder="...">
+                                </div>
+                                <div class="form-list show-mobile">
+                                    <h3>IL TUO ORDINE ESCLUSIVO</h3>
+                                    <ul>
+                                        <li><strong>Prodotto:</strong> Shine Essence (2 Flaconi)</li>
+                                        <li><strong>Offerta:</strong> Speciale 2x1 <br> (1 Paghi + 1 in REGALO)</li>
+                                        <li><strong>Spedizione:</strong> Gratuita e <br> Veloce (24/48h)</li>
+                                        <li><strong>Pagamento:</strong> Alla Consegna</li>
+                                        <li><strong>Garanzia:</strong> Soddisfatta o <br> Rimborsata 30 Giorni</li>
+                                    </ul>
+                                </div>
+                                <button class="form__btn" type="submit">SÌ, CONFERMO E RICEVO IL MIO REGALO - €49.99</button>
+                                <label class="form__label" for="agree">
+                                    <p>Ho letto e accetto la Informativa Sulla Privacy e i Termini e Condizioni.</p>
+                                    <input type="checkbox" name="agree" id="agree">
+                                    <span class="custom-box"></span>
+                                </label>
+                                <div class="guarantee">
+                                    <img src="img/guarantee-icon.svg" alt="guarantee">
+                                    <p>Transazione Sicura e Garantita. Affrettati, ultimi pezzi!</p>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="form__right">
+                            <div class="form__text">
+                                <div class="form-timer hide-tablet">
+                                    <h3>L'offerta termina tra:</h3>
+                                    <div class="countdown">
+                                        <div class="ring" id="ring-hrs">
+                                            <svg viewBox="0 0 120 120" aria-hidden="true">
+                                                <circle class="track" cx="60" cy="60" r="54"></circle>
+                                                <circle class="progress" cx="60" cy="60" r="54"></circle>
+                                            </svg>
+                                            <div class="value" id="val-hrs">08</div>
+                                            <div class="label">Orologio</div>
+                                        </div>
+                                    
+                                        <div class="ring" id="ring-min">
+                                            <svg viewBox="0 0 120 120" aria-hidden="true">
+                                                <circle class="track" cx="60" cy="60" r="54"></circle>
+                                                <circle class="progress" cx="60" cy="60" r="54"></circle>
+                                            </svg>
+                                            <div class="value" id="val-min">33</div>
+                                            <div class="label">Minuti</div>
+                                        </div>
+                                    
+                                        <div class="ring" id="ring-sec">
+                                            <svg viewBox="0 0 120 120" aria-hidden="true">
+                                                <circle class="track" cx="60" cy="60" r="54"></circle>
+                                                <circle class="progress" cx="60" cy="60" r="54"></circle>
+                                            </svg>
+                                            <div class="value" id="val-sec">57</div>
+                                            <div class="label">Seconde</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-list hide-mobile">
+                                    <h3>IL TUO ORDINE ESCLUSIVO</h3>
+                                    <ul>
+                                        <li><strong>Prodotto:</strong> Shine Essence (2 Flaconi)</li>
+                                        <li><strong>Offerta:</strong> Speciale 2x1 (1 Paghi + 1 in REGALO)</li>
+                                        <li><strong>Spedizione:</strong> Gratuita e Veloce (24/48h)</li>
+                                        <li><strong>Pagamento:</strong> Alla Consegna</li>
+                                        <li><strong>Garanzia:</strong> Soddisfatta o Rimborsata 30 Giorni</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="form__img">
+                                <picture>
+                                    <source media="(max-width: 650px)" srcset="img/order-page-img-mobile.png">
+                                    <img src="img/order-page-img.png" alt="form">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <script>
+            const TOTAL_SECONDS = (8 * 3600) + (33 * 60) + 57;
+            const STORAGE_KEY = 'countdown_end_ts_v1';
+
+            const hrsRing = document.querySelector('#ring-hrs .progress');
+            const minRing = document.querySelector('#ring-min .progress');
+            const secRing = document.querySelector('#ring-sec .progress');
+
+            const hrsVal = document.getElementById('val-hrs');
+            const minVal = document.getElementById('val-min');
+            const secVal = document.getElementById('val-sec');
+
+            const R = secRing.r.baseVal.value;
+            const C = 2 * Math.PI * R;
+            [hrsRing, minRing, secRing].forEach(c => {
+                c.style.strokeDasharray = `${C} ${C}`;
+                c.style.strokeDashoffset = '0';
+            });
+
+            const nowTs = Date.now();
+            let saved = Number(localStorage.getItem(STORAGE_KEY));
+            let end = (saved && saved > nowTs) ? saved : nowTs + TOTAL_SECONDS * 1000;
+            if (!saved || saved <= nowTs) localStorage.setItem(STORAGE_KEY, String(end));
+
+            function pad(n) { return n.toString().padStart(2, '0'); }
+            function setProgress(circle, ratioRemaining) {
+                const r = Math.max(0, Math.min(1, ratioRemaining));
+                circle.style.strokeDashoffset = String(C * (1 - r));
+            }
+
+            function tick() {
+                const now = Date.now();
+                let remain = Math.max(0, Math.floor((end - now) / 1000));
+
+                const h = Math.floor(remain / 3600);
+                const m = Math.floor((remain % 3600) / 60);
+                const s = remain % 60;
+
+                hrsVal.textContent = pad(h);
+                minVal.textContent = pad(m);
+                secVal.textContent = pad(s);
+
+                const ratioHours = remain / (TOTAL_SECONDS || 1);
+                const ratioMinutes = (remain % 3600) / 3600;
+                const ratioSeconds = (remain % 60) / 60;
+
+                setProgress(hrsRing, ratioHours);
+                setProgress(minRing, ratioMinutes);
+                setProgress(secRing, ratioSeconds);
+
+                if (remain <= 0) {
+                    clearInterval(timer);
+                    setProgress(hrsRing, 0);
+                    setProgress(minRing, 0);
+                    setProgress(secRing, 0);
+                    localStorage.removeItem(STORAGE_KEY);
+                }
+            }
+
+            tick();
+            const timer = setInterval(tick, 100);
+        </script>
+          
+		<footer class="footer">
+    <div class="container">
+        <div class="footer__logo show-tablet">
+            <img src="img/logo.svg" alt="logo">
+        </div>
+        <div class="footer-top">
+            <div class="footer__logo hide-tablet">
+                <img src="img/logo.svg" alt="logo">
+            </div>
+            <div class="footer__menu hide-tablet">
+                <li><a href="#believe">Giudizi</a></li>
+                <li><a href="#science">Come funziona</a></li>
+                <li><a href="#transformation">Trasformazione</a></li>
+                <li><a href="#steps">Come funziona</a></li>
+                <li><a href="#order">Come usare</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="">Informativa sulla privacy</a></li>
+                <li><a href="">Termini e condizion</a></li>
+            </div>
+            <div class="footer__menu show-tablet">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#believe">Giudizi</a></li>
+                    <li><a href="#science">Come funziona</a></li>
+
+                </ul>
+                <ul>
+                    <li><a href="#transformation">Trasformazione</a></li>
+                    <li><a href="#steps">Come funziona</a></li>
+                    <li><a href="#order">Come usare</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="">Informativa sulla privacy</a></li>
+                    <li><a href="">Termini e condizion</a></li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    <div class="footer-privacy">
+        Privacy policy
+    </div>
+</footer>
+	</main>
+	<script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+	<script defer src="js/main.js"></script>
+</body>
+</html>
+
