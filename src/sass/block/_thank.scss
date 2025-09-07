@@ -255,44 +255,46 @@
 }
 @media screen and (max-width: 1024px) {
     .thank {
-        padding: 90px 0 122px 0;
+        padding: 11.719vw 0 15.885vw 0;
 
         &__title {
-            font-size: 52px;
+            font-size: 6.771vw;
         }
 
         &__subtitle {
-            margin-top: 16px;
-            font-size: 46px;
+            margin-top: 2.083vw;
+            font-size: 5.990vw;
             width: 100%;
         }
     }
 
     .thank-content {
         &__title {
-            font-size: 36px;
-            margin-top: 60px;
+            font-size: 4.688vw;
+            margin-top: 7.813vw;
         }
     }
 
     .thank-content-items {
-        margin-top: 10px;
+        margin-top: 1.302vw;
         flex-direction: column;
     }
 
     .thank-content-item {
         width: 100%;
-        padding: 20px 0;
+        padding: 2.604vw 0;
         margin-right: 0;
-        margin-bottom: 40px;
-        &:last-child{
+        margin-bottom: 5.208vw;
+
+        &:last-child {
             margin-bottom: 0;
         }
+
         &::before {
-            width: 2px;
-            height: 30px;
-            border-right: 2px dashed #414141;
-            bottom: -35px;
+            width: 0.260vw;
+            height: 3.906vw;
+            border-right: 0.260vw dashed #414141;
+            bottom: -4.557vw;
             border-top: unset;
             top: unset;
             right: 50%;
@@ -300,52 +302,53 @@
         }
 
         &__title {
-            font-size: 30px;
+            font-size: 3.906vw;
         }
 
         &__icon {
-            width: 100px;
-            height: 82px;
-            margin-top: 20px;
+            width: 13.021vw;
+            height: 10.677vw;
+            margin-top: 2.604vw;
         }
 
         &__descr {
-            margin-top: 18px;
-            line-height: 22px;
-            font-size: 18px;
+            margin-top: 2.344vw;
+            line-height: 2.865vw;
+            font-size: 2.344vw;
         }
     }
 
     .thank-message {
-        margin-top: 40px;
+        margin-top: 5.208vw;
         width: 100%;
-        padding: 40px;
-        border-radius: 20px;
-        border: 1px solid #EBA600;
+        padding: 5.208vw;
+        border-radius: 2.604vw;
+        border: 0.130vw solid #EBA600;
         flex-direction: column;
+
         &__title {
-            font-size: 36px;
+            font-size: 4.688vw;
         }
 
         &__descr {
-            margin-top: 18px;
-            font-size: 18px;
-            line-height: 22px;
+            margin-top: 2.344vw;
+            font-size: 2.344vw;
+            line-height: 2.865vw;
         }
 
         &__right {
             width: 100%;
-            margin-top: 20px;
+            margin-top: 2.604vw;
 
             & p {
-                font-size: 18px;
-                line-height: 22px;
+                font-size: 2.344vw;
+                line-height: 2.865vw;
             }
 
             & a {
-                margin-top: 30px;
-                width: 44px;
-                height: 44px;
+                margin-top: 3.906vw;
+                width: 5.729vw;
+                height: 5.729vw;
             }
         }
     }
@@ -355,94 +358,97 @@
         margin-right: 0;
     }
 }
+  
 @media screen and (max-width: 650px) {
     .thank {
-        padding: 70px 0 80px 0;
-
-        &__title {
-            font-size: 40px;
-        }
-
-        &__subtitle {
-            margin-top: 15px;
-            font-size: 24px;
-        }
+      padding: 16.908vw 0 19.324vw 0;
+  
+      &__title {
+        font-size: 9.662vw;
+      }
+  
+      &__subtitle {
+        margin-top: 3.623vw;
+        font-size: 5.797vw;
+      }
     }
-
+  
     .thank-content {
-        &__title {
-            font-size: 24px;
-            margin-top: 50px;
-        }
+      &__title {
+        font-size: 5.797vw;
+        margin-top: 12.077vw;
+      }
     }
-
+  
     .thank-content-items {
-        margin-top: 30px;
+      margin-top: 7.246vw;
     }
-
+  
     .thank-content-item {
-        width: 298px;
-        padding: 0;
-        margin-right: 0;
-        margin-bottom: 25px;
-        margin-left: auto;
+      width: 71.981vw;
+      padding: 0;
+      margin-right: 0;
+      margin-bottom: 6.039vw;
+      margin-left: auto;
+      margin-right: auto;
+  
+      &:last-child {
+        margin-bottom: 0;
         margin-right: auto;
-        &:last-child{
-            margin-bottom: 0;
-            margin-right: auto;
-        }
-        &::before {
-            display: none;
-        }
-
-        &__title {
-            font-size: 20px;
-        }
-
-        &__icon {
-            width: 78px;
-            height: 58px;
-            margin-top: 20px;
-        }
-
-        &__descr {
-            margin-top: 20px;
-            line-height: 20px;
-            font-size: 16px;
-        }
+      }
+  
+      &::before {
+        display: none;
+      }
+  
+      &__title {
+        font-size: 4.831vw;
+      }
+  
+      &__icon {
+        width: 18.841vw;
+        height: 14.010vw;
+        margin-top: 4.831vw;
+      }
+  
+      &__descr {
+        margin-top: 4.831vw;
+        line-height: 4.831vw;
+        font-size: 3.865vw;
+      }
     }
-
+  
     .thank-message {
-        margin-top: 50px;
-        width: 322px;
-        padding: 0;
-        border-radius: 0;
-        border: unset;
-        &__title {
-            font-size: 22px;
+      margin-top: 12.077vw;
+      width: 77.778vw;
+      padding: 0;
+      border-radius: 0;
+      border: unset;
+  
+      &__title {
+        font-size: 5.314vw;
+      }
+  
+      &__descr {
+        margin-top: 2.415vw;
+        font-size: 3.865vw;
+        line-height: 4.831vw;
+      }
+  
+      &__right {
+        margin-top: 12.077vw;
+  
+        & p {
+          font-size: 3.865vw;
+          line-height: 4.831vw;
         }
-
-        &__descr {
-            margin-top: 10px;
-            font-size: 16px;
-            line-height: 20px;
+  
+        & a {
+          margin-top: 3.623vw;
+          width: 8.696vw;
+          height: 8.696vw;
         }
-
-        &__right {
-            margin-top: 50px;
-
-            & p {
-                font-size: 16px;
-                line-height: 20px;
-            }
-
-            & a {
-                margin-top: 15px;
-                width: 36px;
-                height: 36px;
-            }
-        }
+      }
     }
-
-    
-}
+  }
+  
